@@ -2,16 +2,16 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
         // Задача 1.
-        for (int i = 0; i < 10; i = i + 1) {
+        for (int i = 1; i <= 10; i = i + 1) {
             System.out.println("Итерация цикла " + i);
         }
 
         //Задача 2.
-        for (int i = 10; i >= 0; i = i - 1) {
+        for (int i = 10; i >= 1; i = i - 1) {
             System.out.println("Итерация цикла" + i);
         }
         //Задача 3.
-        for (int i = 0; i < 17; i = i + 2) {
+        for (int i = 0; i <= 17; i = i + 2) {
             System.out.println("Итерация цилка" + i);
         }
         //Задача 4.
@@ -39,24 +39,23 @@ public class Main {
         int total = 0;
         for (int i = 0; i < 12; i = i + 1) {
             total = total + salary;
+            System.out.println("Месяц " + (i + 1) + ", сумма накоплений равна " + total + " рублей");
         }
         System.out.println("месяц" + salary + "cумма годовых накоплений" + total);
 
         //задача 9.
-         salary = 29000;
+        salary = 29000;
         for (int i = 0; i < 12; i++) {
-            total = total + total/100;
-            total = total + salary;
+            total = total + total / 100;
+            total+=salary;
             System.out.println("Месяц " + i + " Итого " + total);
         }
         System.out.println(total);
 
         //задача 10
-        for (int i = 1; i <= 10; i = i +1) {
-            System.out.println("2* " + i +"=" + 2*i);
+        for (int i = 1; i <= 10; i = i + 1) {
+            System.out.println("2* " + i + "=" + 2 * i);
         }
-
-
 
 
     }
